@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Break Up w her ass</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
             color: #fff;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Hide overflowing content */
-            background-color: #1c1c1c; /* Dark gray color */
-            background-image: url('https://www.transparenttextures.com/patterns/dirty-aztec.png'); /* Disrespectful background */
+            overflow: hidden;
+            background-color: #1c1c1c;
+            background-image: url('https://www.transparenttextures.com/patterns/dirty-aztec.png');
         }
         h1 {
             text-align: center;
             margin-top: 50px;
-            color: #ff4500; /* Metallic orange color */
-            text-transform: uppercase; /* Convert text to uppercase */
-            letter-spacing: 2px; /* Add letter spacing */
-            font-weight: 700; /* Bold font weight */
-            font-size: 36px; /* Larger font size */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for a metallic effect */
+            color: #ff4500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         ul {
             list-style-type: none;
@@ -32,20 +32,20 @@
             max-width: 600px;
         }
         li {
-            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+            background-color: rgba(255, 255, 255, 0.2);
             padding: 20px;
             margin-bottom: 10px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             position: relative;
             overflow: hidden;
-            transition: transform 0.3s ease-in-out; /* Add transition effect */
-            font-weight: 400; /* Normal font weight */
-            font-size: 18px; /* Font size */
-            font-style: italic; /* Italic font style */
+            transition: transform 0.3s ease-in-out;
+            font-weight: 400;
+            font-size: 18px;
+            font-style: italic;
         }
         li:hover {
-            transform: translateY(-5px); /* Add hover animation */
+            transform: translateY(-5px);
         }
         li:before {
             content: "";
@@ -54,16 +54,16 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, #ff4500, #ff69b4); /* Gradient background */
+            background: linear-gradient(45deg, #ff4500, #ff69b4);
             z-index: -1;
-            transition: opacity 0.3s ease-in-out; /* Add transition effect */
-            opacity: 0; /* Hide by default */
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
         }
         li:hover:before {
-            opacity: 1; /* Show on hover */
+            opacity: 1;
         }
         li:hover span {
-            color: #fff; /* Change text color on hover */
+            color: #fff;
         }
         span {
             display: block;
@@ -74,8 +74,25 @@
             text-align: center;
             margin-top: 30px;
             font-size: 20px;
-            color: #ff4500; /* Metallic orange color */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for a metallic effect */
+            color: #ff4500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .social-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-buttons button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .social-buttons button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -89,5 +106,20 @@
         <li><span>She likes BTS</span></li>
     </ul>
     <div class="footer">The list goes on</div>
+
+    <div class="social-buttons">
+        <button onclick="shareOnFacebook()"><i class="fab fa-facebook-f"></i> Share on Facebook</button>
+        <button onclick="shareOnTwitter()"><i class="fab fa-twitter"></i> X</button>
+    </div>
+
+    <script>
+        function shareOnFacebook() {
+            window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank');
+        }
+
+        function shareOnTwitter() {
+            window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href), '_blank');
+        }
+    </script>
 </body>
 </html>
