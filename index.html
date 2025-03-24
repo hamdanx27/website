@@ -18,7 +18,22 @@
             text-align: center;
             color: #1e90ff; 
             text-shadow: 2px 2px 4px black; 
+            margin: 20px;
         }
+        .video-container {
+            text-align: center; 
+            margin: 20px auto;
+            max-width: 930px; 
+        }
+        /* Make the video responsive */
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid #555; /* optional, just to show the video boundary */
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
@@ -87,7 +102,7 @@
         /* Responsive Styles */
         @media screen and (max-width: 600px) {
             h1 {
-                font-size: 28px;
+                font-size: 24px;
             }
             ul {
                 max-width: 90%;
@@ -95,18 +110,25 @@
             li {
                 font-size: 16px;
             }
+            /* Let video take full width on small screens */
+            .video-container {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Jo is an ugly ass whore</h1>
-    <div style="text-align: center; margin-top: 20px;">
-        <!-- Video container with a preview (poster) and controls -->
-        <video width="930" height="523" controls poster="thumbnail.jpg">
+    
+    <div class="video-container">
+        <!-- Video with a preview (poster) and controls -->
+        <!-- Replace `thumbnail.jpg` with your actual thumbnail image name -->
+        <video controls poster="thumbnail.jpg">
             <source src="video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
+
     <div class="social-buttons">
         <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, '_blank')">
             <i class="fab fa-facebook-f"></i> Share on Facebook
